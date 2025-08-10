@@ -1,0 +1,190 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karate: The Martial Art</title>
+    <!-- Use the Inter font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN for easy styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #e0e0e0; /* Darker background */
+            color: #e2e8f0; /* Light text for readability */
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col items-center justify-center p-4">
+
+    <!-- Main container for the tabbed interface -->
+    <div class="w-full max-w-5xl bg-gray-800 rounded-3xl shadow-2xl p-6 md:p-10 lg:p-12">
+        <!-- Header section -->
+        <header class="text-center mb-10 pb-6 border-b-2 border-red-500">
+            <div class="flex flex-col items-center justify-center space-y-4">
+                <!-- SVG icon for a karate gi -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-fist-raised text-red-400 drop-shadow-md">
+                    <path d="m15 16-4.5 4.5a3 3 0 0 1-5.228-2.613l-1-7A3 3 0 0 1 7 5h4c2.21 0 4 1.79 4 4v7Z"></path>
+                    <path d="M12.5 12.5h0"></path>
+                    <path d="m15.5 10.5 2 2c.7.7 1.25 2.128.877 3.25l-2 5a3 3 0 0 1-5.228 2.613l-1-7A3 3 0 0 1 7 5h4c2.21 0 4 1.79 4 4v7Z"></path>
+                    <path d="M14 9a2 2 0 0 1-2-2"></path>
+                    <path d="m16 8 2.3-2.3a1 1 0 0 1 1.4 0l.7.7a1 1 0 0 1 0 1.4l-2.3 2.3"></path>
+                </svg>
+                <h1 class="text-4xl sm:text-5xl font-extrabold drop-shadow-lg text-white">Karate: The Martial Art</h1>
+                
+                <p class="text-xs text-gray-400">A comprehensive guide to the way of the empty hand.</p>
+                <h3>WEBSITE BY:K.A.SANJAY</h3>
+
+            </div>
+        </header>
+
+        <!-- Tab buttons for navigation -->
+        <div class="flex flex-col sm:flex-row justify-center space-y-2 sm:space-y-0 sm:space-x-4 mb-6">
+            <button id="tab1-button" class="tab-button bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transition-colors duration-200">What is Karate?</button>
+            <button id="tab2-button" class="tab-button bg-gray-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transition-colors duration-200">History</button>
+            <button id="tab3-button" class="tab-button bg-gray-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transition-colors duration-200">Belts & Principles</button>
+            <button id="tab4-button" class="tab-button bg-gray-600 hover:bg-red-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transition-colors duration-200">More Resources</button>
+        </div>
+
+        <!-- Tab content sections -->
+        <div class="tab-content" id="tab1-content">
+            <h2 class="text-3xl font-bold text-red-400 mb-4 pb-2 border-b-2 border-red-500">What is Karate?</h2>
+            <img src="https://i.ytimg.com/vi/Gc9tr0ASDf4/maxresdefault.jpg" class="w-full rounded-xl shadow-md mb-6">
+            <p class="text-base sm:text-lg text-gray-300 leading-relaxed">
+                Karate, which translates to "empty hand" in Japanese, is a striking martial art developed on the Ryukyu Islands (modern-day Okinawa, Japan). It is a form of self-defense that utilizes punching, kicking, knee strikes, elbow strikes, and open-hand techniques. Beyond its physical aspects, karate training is a holistic practice that combines rigorous physical fitness with the cultivation of mental discipline and strong character.
+            </p>
+        </div>
+
+        <div class="tab-content hidden" id="tab2-content">
+            <h2 class="text-3xl font-bold text-red-400 mb-4 pb-2 border-b-2 border-red-500">A Brief History</h2>
+            
+            <img src="https://karate.news/wp-content/uploads/2023/05/Gichin-Funakoshi.jpg"  class="w-full rounded-xl shadow-md mb-6 " height="77px">
+            <p class="text-base sm:text-lg text-gray-300 leading-relaxed mb-8">
+                Karate's origins can be traced back hundreds of years to the indigenous martial arts of Okinawa, known as <span class="font-extrabold text-red-400">Te</span>, which were heavily influenced by Chinese martial arts brought by traders and diplomats. In the early 20th century, the master Gichin Funakoshi began introducing karate to mainland Japan. He is often credited as the "father of modern karate" for his efforts in systematizing the art and making it a formal part of the education system. His style, Shotokan, became one of the most popular worldwide. Since then, numerous other styles have emerged, each with its unique focus on specific techniques and philosophies, but all sharing a common foundation of discipline and respect.
+            </p>
+            <h2 class="text-2xl font-bold text-red-400 mb-4 pb-2 border-b-2 border-red-500">Dojo Etiquette</h2>
+            <p class="text-base sm:text-lg text-gray-300 leading-relaxed">
+                A significant part of karate training is learning and respecting the customs of the dojo (training hall). Proper etiquette is a demonstration of your dedication and respect for the art and its practitioners. This includes bowing when entering and leaving the dojo, bowing to your sensei (teacher) and fellow students, and maintaining a quiet, focused demeanor during class. Following these rules helps create a disciplined and harmonious environment for all.
+            </p>
+        </div>
+
+        <div class="tab-content hidden" id="tab3-content">
+            <h2 class="text-3xl font-bold text-red-400 mb-4 pb-2 border-b-2 border-red-500">The Meaning of Belts</h2>
+            <IMG SRC=" https://bsrkkarate.co.uk/wp-content/uploads/2022/01/Grading-belts-bsrk-300x300-1.png"class="w-full rounded-xl shadow-md mb-6 " height="77px">
+            <p class="text-base sm:text-lg text-gray-300 leading-relaxed mb-4">
+                The colored belt system, or `kyu` grades, in karate is a visual representation of a student's progress and rank. The progression from white to black belt symbolizes a journey from ignorance to mastery.
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-6 mb-8">
+                <div class="bg-gray-700 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold text-gray-200 mb-2">White Belt</h3>
+                    <p class="text-gray-400">Symbolizes purity and innocence. It represents the start of the journey, with no prior knowledge of the art.</p>
+                </div>
+                <div class="bg-gray-700 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold text-gray-200 mb-2">Yellow to Green Belts</h3>
+                    <p class="text-gray-400">These intermediate belts symbolize the earth and the growth of a seed. Students at this level begin to learn and apply fundamental techniques.</p>
+                </div>
+                <div class="bg-gray-700 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold text-gray-200 mb-2">Blue to Brown Belts</h3>
+                    <p class="text-gray-400">Representing the sky and the deepening of knowledge. These students are developing more advanced skills and a deeper understanding of the art.</p>
+                </div>
+                <div class="bg-gray-700 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-extrabold text-gray-200 mb-2">Black Belt</h3>
+                    <p class="text-gray-400">Represents the highest level of achievement in the `kyu` system. It signifies a mastery of the basics and the beginning of a new journey toward true expertise.</p>
+                </div>
+            </div>
+            <h2 class="text-3xl font-bold text-red-400 mb-4 pb-2 border-b-2 border-red-500">Key Principles</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Principle 1 -->
+                <div class="bg-gray-700 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-extrabold text-red-400 mb-2 flex items-center space-x-2">
+                        <span class="text-2xl">🙏</span> <span>Respect (Rei)</span>
+                    </h3>
+                    <p class="text-gray-400">
+                        A fundamental principle that emphasizes bowing, discipline, and showing respect to your instructors, peers, and opponents.
+                    </p>
+                </div>
+                <!-- Principle 2 -->
+                <div class="bg-gray-700 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-extrabold text-red-400 mb-2 flex items-center space-x-2">
+                        <span class="text-2xl">🥋</span> <span>Character (Dojo Kun)</span>
+                    </h3>
+                    <p class="text-gray-400">
+                        The "Dojo Kun" or "rules of the training hall" focus on developing a strong moral character, sincerity, and self-control.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="tab-content hidden" id="tab4-content">
+            <h2 class="text-3xl font-bold text-red-400 mb-4 pb-2 border-b-2 border-red-500">Demonstrations & Imagery</h2>
+            
+            <h3 class="text-2xl font-bold text-red-400 mb-4">Video Demonstration</h3>
+            <div class="relative w-full overflow-hidden rounded-xl shadow-md mb-8" style="padding-top: 56.25%;">
+                <!-- 16:9 Aspect Ratio -->
+                <iframe 
+                    class="absolute top-0 left-0 w-full h-full" 
+                    src="https://www.youtube.com/embed/8EJKvm2RF24" 
+                    title="Karate Demonstration" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <h3 class="text-2xl font-bold text-red-400 mb-4">Visuals of the Art</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-gray-700 p-4 rounded-lg shadow-md">
+                    <img src="https://media.istockphoto.com/id/1372525924/photo/shot-of-a-young-man-and-cute-little-girl-practicing-karate-in-a-studio.jpg?s=612x612&w=0&k=20&c=H5089xC5OhHbCztwxMMn5RLMSRIMc3kPDsVTvfrSZDU=" class="w-full rounded-lg mb-4">
+                    <p class="text-gray-400 text-center">A student bowing to their instructor, a sign of respect.</p>
+                </div>
+                <div class="bg-gray-700 p-4 rounded-lg shadow-md">
+                    <img src="https://featured.japan-forward.com/sportslook/wp-content/uploads/sites/6/2021/08/kiyuna3-2048x1365-1-e1676778462111.jpg" class="w-full rounded-lg mb-4">
+                    <p class="text-gray-400 text-center">A practitioner demonstrating a series of movements in a kata.</p>
+                </div>
+                <div class="bg-gray-700 p-4 rounded-lg shadow-md">
+                    <img src="https://www.shutterstock.com/image-illustration/interior-rendering-karate-dojo-japanese-600nw-1903657195.jpg" alt="The interior of a traditional dojo" class="w-full rounded-lg mb-4">
+                    <p class="text-gray-400 text-center">The serene and disciplined interior of a traditional dojo.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const tabs = document.querySelectorAll('.tab-button');
+            const contents = document.querySelectorAll('.tab-content');
+
+            function showTab(tabId) {
+                // Hide all contents
+                contents.forEach(content => {
+                    content.classList.add('hidden');
+                });
+                // De-activate all buttons
+                tabs.forEach(tab => {
+                    tab.classList.remove('bg-red-600', 'hover:bg-red-700');
+                    tab.classList.add('bg-gray-600', 'hover:bg-red-700');
+                });
+
+                // Show the selected content
+                document.getElementById(tabId + '-content').classList.remove('hidden');
+                // Activate the selected button
+                document.getElementById(tabId + '-button').classList.remove('bg-gray-600', 'hover:bg-red-700');
+                document.getElementById(tabId + '-button').classList.add('bg-red-600', 'hover:bg-red-700');
+            }
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', (event) => {
+                    const tabId = event.target.id.split('-')[0];
+                    showTab(tabId);
+                });
+            });
+
+            // Show the first tab by default
+            showTab('tab1');
+        });
+    </script>
+</body>
+</html>
